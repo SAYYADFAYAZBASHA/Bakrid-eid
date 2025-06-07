@@ -84,10 +84,10 @@
             width: 500px;
             animation: popIn 1s ease-out forwards;
             position: relative;
-            overflow: hidden; /* Important for containing the flowing effect */
+            overflow: hidden;
             border: 5px solid;
             border-image: linear-gradient(45deg, #FF69B4, #8A2BE2, #00CED1) 1;
-            z-index: 1; /* Ensures card content is above background sparkles */
+            z-index: 1;
         }
 
         /* New: Flowing sparkles/hearts inside the card */
@@ -100,7 +100,7 @@
             height: 100%;
             background: transparent;
             pointer-events: none;
-            z-index: -1; /* Keep it behind the card's main content */
+            z-index: -1;
             animation: cardFlowEffect 15s linear infinite;
         }
 
@@ -109,15 +109,15 @@
                 transform: translateY(-100%);
                 opacity: 0;
                 box-shadow:
-                    5% 0% 3px 3px rgba(255, 105, 180, 0.7), /* hotpink heart */
-                    25% 10% 4px 4px rgba(255, 0, 0, 0.7), /* red heart */
-                    45% 20% 2px 2px rgba(255, 255, 255, 0.9), /* white star */
-                    65% 30% 3px 3px rgba(255, 255, 0, 0.8), /* yellow star */
-                    85% 40% 4px 4px rgba(255, 192, 203, 0.7); /* light pink heart */
+                    5% 0% 3px 3px rgba(255, 105, 180, 0.7),
+                    25% 10% 4px 4px rgba(255, 0, 0, 0.7),
+                    45% 20% 2px 2px rgba(255, 255, 255, 0.9),
+                    65% 30% 3px 3px rgba(255, 255, 0, 0.8),
+                    85% 40% 4px 4px rgba(255, 192, 203, 0.7);
             }
             100% {
                 transform: translateY(100%);
-                opacity: 1; /* Max opacity in the middle of the flow */
+                opacity: 1;
                 box-shadow:
                     5% 100% 3px 3px rgba(255, 105, 180, 0.7),
                     25% 110% 4px 4px rgba(255, 0, 0, 0.7),
